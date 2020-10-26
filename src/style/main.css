@@ -1,0 +1,297 @@
+/* reset styles */
+/* ======================================================================== */
+/* importing fonts */
+@font-face {
+  font-family: moon-regular;
+  src: url("vendor/webfonts/Moon Light.otf");
+}
+
+@font-face {
+  font-family: moon-bold;
+  src: url("vendor/webfonts/Moon Bold.otf");
+}
+
+@font-face {
+  font-family: lato-regular;
+  src: url("vendor/webfonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: lato-bold;
+  src: url("vendor/webfonts/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: montserrat-regular;
+  src: url("vendor/webfonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: montserrat-bold;
+  src: url("vendor/webfonts/Montserrat-Bold.ttf");
+}
+
+/* reseting basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  background: none;
+  border-radius: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: montserrat-bold;
+  color: #333;
+}
+
+p,
+textarea,
+input,
+pre,
+button,
+figcaption,
+a {
+  font-family: montserrat-regular;
+  color: #444;
+}
+
+a,
+button {
+  cursor: pointer;
+  transition: .3s;
+  font-family: lato-regular;
+}
+
+/* header styles */
+/* ======================================================================== */
+.header {
+  padding: 25px 0;
+  margin-bottom: 25px;
+}
+
+.header .sectionContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header .sectionContainer .logoLink .logoImage {
+  max-width: 150px;
+  height: auto;
+}
+
+.main .contentSection {
+  margin-bottom: 75px;
+}
+
+.main .contentSection .sectionContainer {
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  column-gap: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .main .contentSection .sectionContainer {
+    flex-direction: column;
+  }
+}
+
+.main .contentSection .sectionContainer .sectionText {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.main .contentSection .sectionContainer .sectionText .sectionHeader {
+  font-weight: 700;
+  font-size: 2.1rem;
+  line-height: 1.25;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 767px) {
+  .main .contentSection .sectionContainer .sectionText .sectionHeader {
+    font-size: 1.5rem;
+  }
+}
+
+.main .contentSection .sectionContainer .sectionText .sectionPara {
+  line-height: 1.25;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.main .contentSection .sectionContainer .sectionText .sectionButton {
+  text-transform: capitalize;
+  background-color: #FF7F2D;
+  border: 2px solid transparent;
+  color: #fff;
+  margin-top: 10px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.main .contentSection .sectionContainer .sectionText .sectionButton:hover {
+  background-color: transparent;
+  border-color: #FF7F2D;
+  color: #FF7F2D;
+}
+
+.main .contentSection .sectionContainer .sectionImage {
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.main .contentSection .sectionContainer .sectionImage .sectionImageItem {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  .main .contentSection.wawSection .sectionContainer .sectionText {
+    order: 1;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main .contentSection.wawSection .sectionContainer .sectionImage {
+    order: 2;
+  }
+}
+
+.main .contentSection.clientSection .sectionContainer {
+  flex-direction: column;
+}
+
+.main .contentSection.clientSection .sectionContainer .sectionText {
+  text-align: center;
+  padding: 5%;
+  padding-top: 0;
+}
+
+.main .contentSection.clientSection .sectionContainer .sectionImage {
+  cursor: pointer;
+}
+
+.main .contentSection.clientSection .sectionContainer .sectionImage .sectionImageItem {
+  max-width: 100px;
+}
+
+.main .contentSection.bannerSection .sectionContainer {
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  background-image: url("../file/about4.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.main .contentSection.bannerSection .sectionContainer::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  content: '';
+  z-index: 1;
+}
+
+.main .contentSection.bannerSection .sectionContainer .sectionInnerText {
+  font-size: 2.5rem;
+  color: #fff;
+  padding: 10% 7.5%;
+  padding-right: 10%;
+  line-height: 1.25;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 767px) {
+  .main .contentSection.bannerSection .sectionContainer .sectionInnerText {
+    font-size: 1.5rem;
+  }
+}
+
+.main .contentSection.newsSection .sectionContainer .sectionText {
+  text-align: center;
+}
+
+.main .contentSection.newsSection .sectionContainer .sectionText .sectionHeader {
+  margin-bottom: 25px;
+}
+
+.main .contentSection.newsSection .sectionContainer .sectionText .sectionPara {
+  padding: 0 5%;
+}
+
+.main .contentSection.newsSection .sectionContainer .sectionText .newsForm {
+  max-width: 500px;
+  margin: 50px auto;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.main .contentSection.newsSection .sectionContainer .sectionText .newsForm .newsInput {
+  width: 100%;
+  padding: 15px 20px;
+  padding-right: 120px;
+  border-radius: 5px;
+  border: 2px solid #707070;
+}
+
+.main .contentSection.newsSection .sectionContainer .sectionText .newsForm .newsButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  margin: 0;
+}
+
+.footer {
+  padding: 25px 0;
+}
+
+.footer .sectionContainer {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .sectionContainer .logoLink {
+  margin: 5px 0;
+}
+
+.footer .sectionContainer .logoLink .logoImage {
+  max-width: 150px;
+  height: auto;
+}
+
+.footer .sectionContainer .copyRight {
+  line-height: 1.1;
+  margin: 5px 0;
+}
+
+.footer .sectionContainer .copyRight a {
+  color: #FF7F2D;
+}
+/*# sourceMappingURL=main.css.map */
