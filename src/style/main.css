@@ -189,6 +189,52 @@ button {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .main .contentSection.espSection .sectionContainer {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+.main .contentSection.espSection .sectionContainer .sectionItem {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main .contentSection.espSection .sectionContainer .sectionItem {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.main .contentSection.espSection .sectionContainer .sectionItem img {
+  width: 60px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  height: auto;
+}
+
+.main .contentSection.espSection .sectionContainer .sectionItem .sectionItemText {
+  width: calc( 100% - 75px);
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main .contentSection.espSection .sectionContainer .sectionItem .sectionItemText {
+    width: 100%;
+  }
+}
+
+.main .contentSection.espSection .sectionContainer .sectionItem .sectionItemText h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.main .contentSection.espSection .sectionContainer .sectionItem .sectionItemText p {
+  margin-bottom: 10px;
+}
+
 .main .contentSection.clientSection .sectionContainer {
   flex-direction: column;
 }
